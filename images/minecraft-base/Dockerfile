@@ -13,6 +13,9 @@ MAINTAINER totokaka <mail@totokaka.io>
 # Set up the user minecraft with /minecraft as home directory.
 RUN useradd -s /bin/bash -d /minecraft -m minecraft
 
+# Add the script we need to be able to configure java
+ADD args-split.sh /bin/args-split
+
 # _All_ Minecraft related stuff run on port 25565. Even if the public port need
 # to be something else, the port here should be 25565.
 EXPOSE 25565

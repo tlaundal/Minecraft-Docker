@@ -12,7 +12,6 @@ MAINTAINER totokaka <mail@totokaka.io>
 
 # We need the bungeecord jar 
 ADD http://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar /minecraft/bungeecord.jar
-ADD args-split.sh /bin/args-split
 
 # For the entry point we use the args-split script.
 # The syntax for running the container is:

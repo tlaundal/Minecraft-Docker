@@ -12,7 +12,6 @@ MAINTAINER totokaka <mail@totokaka.io>
 
 # We need the spigot jar
 ADD http://ci.md-5.net/job/Spigot/lastSuccessfulBuild/artifact/Spigot-Server/target/spigot.jar /minecraft/spigot.jar
-ADD args-split.sh /bin/args-split
 
 # For the entry point we use the args-split script.
 # The syntax for running the container is:
